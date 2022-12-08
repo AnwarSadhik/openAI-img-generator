@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+     OpenAi image Generator
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spinner.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <h2>AI image Generator</h2>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="https://beta.openai.com/docs" target="_blank">
+                            OpenAi API Docs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="art-container"></div>
+
+        <div class="form-group">
+            <div>
+                <h1 class="title-img">Describe an image to Generate it.</h1> <br>
+                <form id="image-form">
+                    <input type="text" id="prompt" placeholder="enter text">
+                    <select value="size" id="size" class="select-menu">
+                        <option name="small" id="select-value">small</option>
+                        <option name="medium" id="select-value" selected>medium</option>
+                        <option name="large" id="select-value">large</option>
+                    </select> <br>
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+        </div>
+
+        <section class="image">
+            <div class="image-container">
+                <h2 class="msg"></h2>
+                <img src="" alt="" id="image" />
+            </div>
+        </section>
+
+        <div class="spinner"></div>
+
+        <div class="footer">
+           <p>
+            © by Anwar Sadhik
+            </p>
+        </div>
+    </main>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
